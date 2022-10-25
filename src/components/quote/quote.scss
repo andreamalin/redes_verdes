@@ -1,0 +1,49 @@
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+
+    .left-rectangle, .right-rectangle {
+        width: 10%;
+        height: 90%;
+        position: absolute;
+    }
+
+    .left-rectangle {
+        background-color: #4A6C02;
+        left: 0;
+    }
+    .left-image {
+        left: 3vw;
+        top: 3vw;
+    }
+
+    .right-rectangle {
+        background-color: #01334A;
+        right: 0;
+    }
+    .right-image {
+        right: 3vw;
+        bottom: 3vw;
+    }
+
+    img {
+        width: 28vw;
+        position: absolute;
+        z-index: 1;
+    }
+
+
+    .text {
+        max-width: 60%;
+        text-align: center;
+        
+        h1, span {
+            font-family: 'The Bold Font';
+            color: black;
+            font-size: 5vw
+        }
+    }
+}

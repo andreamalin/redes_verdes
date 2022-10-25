@@ -1,0 +1,25 @@
+.banner {
+    .background {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        background: url('https://media.gq.com.mx/photos/5cf80069d09b9acf1616989e/master/pass/Jan-19-Estrin-DigitalPollution.jpg');
+        background-size: cover;
+        background-position-y: 35%;
+    }
+
+    h1 {
+        background: url('https://t4.ftcdn.net/jpg/03/97/29/05/360_F_397290504_wNkaQAEej7K8l46oinx8HJE2aGEB2dsp.jpg');
+        background-size: contain;
+        text-align: center;
+        color: #000000;
+        
+        text-transform: uppercase;
+        font-size: 6vw;
+        font-weight: bolder;
+        width: 100%;
+    }
+}
