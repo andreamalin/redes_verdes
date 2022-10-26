@@ -2,6 +2,36 @@ import ecologicPlanet from '../ecologic_planet.png'
 
 const lang = {
   title: 'Redes Verdes',
+  bgInfo: {
+    info: 'toneladas de emisiones de CO2 anuales',
+    items: [
+      {
+        title: 'Facebook',
+        color: '#5a7bd6',
+        data: '48,600',
+      },
+      {
+        title: 'Google',
+        color: '#ff4d4d',
+        data: '267,240',
+      },
+      {
+        title: 'Amazon',
+        color: '#ff9900',
+        data: '93,069',
+      },
+      {
+        title: 'Apple',
+        color: '#bababa',
+        data: 'unknown',
+      },
+      {
+        title: 'Youtube',
+        color: '#e64c5b',
+        data: '702,000',
+      },
+    ],
+  },
   quote: {
     text1_1: '35 mil',
     text1_2: 'toneladas',
