@@ -27,7 +27,7 @@ const lang = {
       },
       {
         title: 'Youtube',
-        color: '#e64c5b',
+        color: '#BB412A',
         data: '702,000',
       },
     ],

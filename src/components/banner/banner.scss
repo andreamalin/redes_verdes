@@ -39,13 +39,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         .info-name {
+            font-family: 'The Bold Font';
             font-size: 2em;
             margin: 0 1em;
         }
         .info-data {
             font-size: 1em;
-            margin: 0 1em;
+            margin: 1em;
             text-align: center;
         }
     }
