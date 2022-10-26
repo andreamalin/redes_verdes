@@ -42,23 +42,29 @@ const Carousel = () => {
   const [transitioning, setTransitioning] = useState(0)
 
   const goNext = () => {
-    setTransitioning(1)
+    if (transitioning !== 0) return // wait animation
+    setTransitioning(1) // set forwards animation
+    // change slide at middle of animation
     setTimeout(() => {
       setCurrentSlide((oldActive) => (oldActive + 1) % items.length)
-    }, 500)
+    }, 400)
+    // remove animation
     setTimeout(() => {
       setTransitioning(0)
-    }, 1000)
+    }, 800)
   }
 
   const goBack = () => {
-    setTransitioning(2)
+    if (transitioning !== 0) return // wait animation
+    setTransitioning(2) // set backwards animation
+    // change slide at middle of animation
     setTimeout(() => {
       setCurrentSlide((oldActive) => (oldActive !== 0 ? oldActive - 1 : items.length - 1))
-    }, 500)
+    }, 400)
+    // remove animation
     setTimeout(() => {
       setTransitioning(0)
-    }, 1000)
+    }, 800)
   }
 
   const getTransitionClass = () => {

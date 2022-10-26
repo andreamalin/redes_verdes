@@ -13,11 +13,11 @@
     }
 
     .transitioning-forward {
-        animation: transitioningForwardAnimation 1s ease-in-out 0s 1 forwards;
+        animation: transitioningForwardAnimation 0.8s ease-out 0s 1 forwards;
     }
 
     .transitioning-backward {
-        animation: transitioningBackwardAnimation 1s ease-in-out 0s 1 backwards;
+        animation: transitioningBackwardAnimation 0.8s ease-out 0s 1 backwards;
     }
 
     @keyframes transitioningForwardAnimation {
