@@ -39,32 +39,43 @@ const items = [
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [transitioning, setTransitioning] = useState(false)
+  const [transitioning, setTransitioning] = useState(0)
 
   const goNext = () => {
-    setTransitioning(true)
+    setTransitioning(1)
     setTimeout(() => {
       setCurrentSlide((oldActive) => (oldActive + 1) % items.length)
     }, 500)
     setTimeout(() => {
-      setTransitioning(false)
+      setTransitioning(0)
     }, 1000)
   }
 
   const goBack = () => {
-    setTransitioning(true)
+    setTransitioning(2)
     setTimeout(() => {
       setCurrentSlide((oldActive) => (oldActive !== 0 ? oldActive - 1 : items.length - 1))
     }, 500)
     setTimeout(() => {
-      setTransitioning(false)
+      setTransitioning(0)
     }, 1000)
+  }
+
+  const getTransitionClass = () => {
+    switch (transitioning) {
+      case 1:
+        return 'transitioning-forward'
+      case 2:
+        return 'transitioning-backward'
+      default:
+        return ''
+    }
   }
 
   return (
     <div className="carousel">
       <button type="button" onClick={() => goBack()}><img src={arrow} alt="arrow" /></button>
-      <div className={`slidePass ${transitioning ? 'transitioning' : ''}`} />
+      <div className={`slidePass ${getTransitionClass()}`} />
       {
         items.map((item, index) => (
           <div className="item" key={item.id} style={{ display: currentSlide === index ? '' : 'none' }}>

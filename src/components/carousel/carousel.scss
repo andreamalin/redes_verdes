@@ -12,11 +12,15 @@
         transition: 0.5s;
     }
 
-    .transitioning {
-        animation: transitioningAnimation 1s ease-in-out 0s 1 forwards;
+    .transitioning-forward {
+        animation: transitioningForwardAnimation 1s ease-in-out 0s 1 forwards;
     }
 
-    @keyframes transitioningAnimation {
+    .transitioning-backward {
+        animation: transitioningBackwardAnimation 1s ease-in-out 0s 1 backwards;
+    }
+
+    @keyframes transitioningForwardAnimation {
         0% {
             transform-origin: 0;
             transform: scaleX(0);
@@ -31,6 +35,25 @@
         }
         100% {
             transform-origin: 100%;
+            transform: scaleX(0);
+        }
+    }
+
+    @keyframes transitioningBackwardAnimation {
+        0% {
+            transform-origin: 100%;
+            transform: scaleX(0);
+        }
+        40% {
+            transform: scaleX(1);
+            transform-origin: 100%;
+        }
+        60% {
+            transform: scaleX(1);
+            transform-origin: 0;
+        }
+        100% {
+            transform-origin: 0;
             transform: scaleX(0);
         }
     }
