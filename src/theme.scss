@@ -30,3 +30,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 2vw 0;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

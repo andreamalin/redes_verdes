@@ -1,13 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Banner from './components/banner/Banner'
+import Carousel from './components/carousel/Carousel'
 import Quote from './components/quote/Quote'
 import './theme.scss'
 
 const App = () => (
   <div className="home">
     <Banner />
-    <Quote />
+    <div className="section">
+      <Quote />
+    </div>
+    <div className="section">
+      <h1>Razones y Beneficios de Aplicar Redes Verdes</h1>
+      <Carousel />
+    </div>
   </div>
 )
 
