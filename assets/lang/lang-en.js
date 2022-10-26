@@ -44,6 +44,36 @@ const lang = {
       },
     ],
   },
+  technics: {
+    title: 'Algunas de las técnicas que se pueden utilizar para el ahorro de energía son las siguientes:',
+    items: [
+      {
+        title: 'Consolidación de servidores',
+        description: 'Apagar los servidores que no estén en uso y optimizar los existentes.',
+        image: 'https://keepservices.com/wp-content/uploads/2020/09/Consolidacion-y-virtualizacion-de-servidores-en-Argentina.png',
+      },
+      {
+        title: 'Actualización de servidores',
+        description: 'Cambiar los servidores antiguos con otros que consuman una menor cantidad de energía.',
+        image: 'https://www.tecnozero.com/wp-content/uploads/2019/11/migracion-servidor-en-local.png',
+      },
+      {
+        title: 'Implementación de enfriamiento natural',
+        description: 'Utilizar mecanismos que utilicen el aire frío del medio ambiente para mantener los equipos a una temperatura adecuada.',
+        image: 'https://lh3.googleusercontent.com/AHYkQwwZPiXiSvGa2jsO3D9aC3AHiQxiCyhYw1WMY8zTA5IFn1MF6Tz-fUmWUcRhSBLraEbHuS-Fr7aVWUMC0NvnIgUMKZepPlX4af0a-23sUu9-qKc=w900-l100-sg-rj-c0xffffff',
+      },
+      {
+        title: 'Optimizar el flujo de aire',
+        description: 'Diseñar los data centers para que no se quede en circulación el aire caliente de los equipos de computo.',
+        image: 'https://expert.rittal.es/hs-fs/hubfs/Pasillo%20fr%C3%ADo_pasillo%20caliente.jpg?width=525&name=Pasillo%20fr%C3%ADo_pasillo%20caliente.jpg',
+      },
+      {
+        title: 'Encontrar un ambiente adecuado',
+        description: 'De ser posible, escoger un lugar frío, sin humedad y que tenga un buen flujo de aire.',
+        image: 'https://blogs.salleurl.edu/sites/default/files/blogs/data-center-solutions/cpd.png',
+      },
+    ],
+  },
 }
 
 export default lang
