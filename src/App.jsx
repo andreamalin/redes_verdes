@@ -12,7 +12,6 @@ const App = () => (
       <Quote />
     </div>
     <div className="section">
-      <h1>Razones y Beneficios de Aplicar Redes Verdes</h1>
       <Carousel />
     </div>
   </div>
