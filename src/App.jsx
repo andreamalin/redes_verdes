@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Banner from './components/banner/Banner'
 import Carousel from './components/carousel/Carousel'
 import Quote from './components/quote/Quote'
+import AlternedList from './components/alterned-list/AlternedList'
 import './theme.scss'
 
 const App = () => (
@@ -13,6 +14,9 @@ const App = () => (
     </div>
     <div className="section">
       <Carousel />
+    </div>
+    <div className="section">
+      <AlternedList />
     </div>
   </div>
 )

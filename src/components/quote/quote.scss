@@ -31,18 +31,21 @@
 
     img {
         width: 28vw;
-        min-width: 250px;
+        min-width: 230px;
         position: absolute;
         z-index: 1;
-        @media screen and (min-width: 481px) {
-            //width: 44vw;
+        &:nth-child(2) {
+            animation: imageMove 2s linear 0.5s infinite;
+        }
+        &:last-child {
+            animation: imageMove 2s linear 0s infinite;
         }
     }
 
 
     .text {
         position: relative;
-        top: -1.5em;
+        top: -1em;
         max-width: 60%;
         text-align: center;
         display: block;
@@ -52,5 +55,35 @@
             color: black;
             font-size: 5vw
         }
+    }
+}
+
+@keyframes imageMove {
+    0% {
+        transform: translateX(-4px) translateY(4px) rotate(-1deg);
+    }
+    12% {
+        transform: translateX(0) translateY(0) rotate(-1deg);
+    }
+    25% {
+        transform: translateX(4px) translateY(-4px) rotate(0deg);
+    }
+    37% {
+        transform: translateX(6px) translateY(0) rotate(1deg);
+    }
+    50% {
+        transform: translateX(4px) translateY(4px) rotate(1deg);
+    }
+    62% {
+        transform: translateX(0) translateY(0) rotate(1deg);
+    }
+    75% {
+        transform: translateX(-4px) translateY(-4px) rotate(0deg);
+    }
+    87% {
+        transform: translateX(-6px) translateY(0) rotate(-1deg);
+    }
+    100% {
+        transform: translateX(-4px) translateY(4px) rotate(-1deg);
     }
 }
