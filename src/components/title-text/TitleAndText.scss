@@ -1,0 +1,30 @@
+.titleText {
+  max-width: 1400px;
+  margin: 32px auto;
+  h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+  p {
+    font-size: 24px;
+    text-align: justify;
+  }
+  ul.parentList {
+    display: flex;
+    padding-top: 12px;
+    padding-left: 28px;
+
+    > li {
+      width: 50%;
+      padding-right: 40px;
+    }
+    ul.childList {
+      padding-left: 28px;
+    }
+  }
+}
