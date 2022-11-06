@@ -12,6 +12,9 @@ const App = () => (
   <div className="home">
     <Banner />
     <div className="section">
+      <TitleAndText textIndex={2} />
+    </div>
+    <div className="section">
       <Quote />
     </div>
     <div className="section">
@@ -21,7 +24,7 @@ const App = () => (
       <AlternedList />
     </div>
     <div className="section">
-      <TitleAndText />
+      <TitleAndText textIndex={1} />
     </div>
     <div className="section">
       <Tabs />

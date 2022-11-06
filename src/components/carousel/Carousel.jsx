@@ -49,7 +49,7 @@ const Carousel = () => {
 
   return (
     <div>
-      <h2>{lang.reasons.title}</h2>
+      <h1>{lang.reasons.title}</h1>
       <div className="carousel">
         <button type="button" onClick={() => goBack()}><img src={arrow} alt="arrow" /></button>
         <div className={`slidePass ${getTransitionClass()}`} />

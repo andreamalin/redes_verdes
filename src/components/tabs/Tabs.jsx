@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React from 'react'
 import './tabs.scss'
 import airflow from '../../../assets/tabs-imgs/airflow.png'
@@ -12,7 +14,7 @@ const Tabs = () => {
   return (
     <div className="tabs">
       <div className="tabs__title">
-        <h1>Como funcionan los centros de datos verdes</h1>
+        <h1>Cómo funcionan los centros de datos verdes</h1>
       </div>
       <ul className="tabs__nav">
         <li onClick={() => setActiveTab(0)} className={activeTab === 0 && 'tabs__nav--active'}>Flujo de aire</li>
@@ -24,42 +26,51 @@ const Tabs = () => {
       <div className="tabs__content">
         <div className={`tabs__content--info ${activeTab === 0 ? '' : 'hide'}`}>
           <div className="tabs__content--data">
-            <div>40%</div>energia
+            <div>40%</div>
+            energía
           </div>
           <div className="tabs__content--image">
-            <img src={airflow} alt='cooling fan' />
+            <img src={airflow} alt="cooling fan" />
           </div>
         </div>
         <div className={`tabs__content--info ${activeTab === 1 ? '' : 'hide'}`}>
           <div className="tabs__content--image">
-            <img src={server} alt='cooling fan' />
+            <img src={server} alt="cooling fan" />
           </div>
           <div className="tabs__content--data">
-            <div>10-40%</div> energia
+            <div>10-40%</div>
+            {' '}
+            energía
           </div>
         </div>
         <div className={`tabs__content--info ${activeTab === 2 ? '' : 'hide'}`}>
           <div className="tabs__content--data">
-            <div>6 veces</div> eficiencia computacional
+            <div>6 veces</div>
+            {' '}
+            eficiencia computacional
           </div>
           <div className="tabs__content--image">
-            <img src={processing} alt='cooling fan' />
+            <img src={processing} alt="cooling fan" />
           </div>
         </div>
         <div className={`tabs__content--info ${activeTab === 3 ? '' : 'hide'}`}>
           <div className="tabs__content--image">
-            <img src={fourth} alt='cooling fan' />
+            <img src={fourth} alt="cooling fan" />
           </div>
           <div className="tabs__content--data">
-            <div>Hasta 95%</div> energia
+            <div>Hasta 95%</div>
+            {' '}
+            energía
           </div>
         </div>
         <div className={`tabs__content--info ${activeTab === 4 ? '' : 'hide'}`}>
           <div className="tabs__content--data">
-            <div>60%</div> costos de enfriamiento
+            <div>60%</div>
+            {' '}
+            costos de enfriamiento
           </div>
           <div className="tabs__content--image">
-            <img src={cooling} alt='cooling fan' />
+            <img src={cooling} alt="cooling fan" />
           </div>
         </div>
       </div>
