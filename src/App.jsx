@@ -6,7 +6,9 @@ import Quote from './components/quote/Quote'
 import Tabs from './components/tabs/Tabs'
 import TitleAndText from './components/title-text/TitleAndText'
 import AlternedList from './components/alterned-list/AlternedList'
+
 import './theme.scss'
+import Infographic from './components/infographic/Infographic'
 
 const App = () => (
   <div className="home">
@@ -28,6 +30,9 @@ const App = () => (
     </div>
     <div className="section">
       <Tabs />
+    </div>
+    <div className="section">
+      <Infographic />
     </div>
   </div>
 )
