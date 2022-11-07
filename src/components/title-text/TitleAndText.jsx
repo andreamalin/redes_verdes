@@ -63,6 +63,30 @@ const TitleAndText = ({ textIndex }) => (
         )
         : ''
     }
+    {
+      textIndex === 3
+        ? (
+          <>
+            <h1>¿Cuál es el futuro de las redes verdes?</h1>
+            <ul className="conclusions">
+              <li>
+                Queda claro que ya hay varias empresas que están empezando
+                a moverse a un modelo más verde.
+              </li>
+              <li>
+                Se concluye que las redes verdes será la tendencia de los
+                data centers por el ahorro económico que conlleva.
+              </li>
+              <li>
+                Tras observar las técnicas de ahorro de energía, la menos viable
+                será la de encontrar un ambiente adecuado, ya que este factor es muy volátil
+                y los lugares por efectos climáticos cambian su temperatura.
+              </li>
+            </ul>
+          </>
+        )
+        : ''
+    }
   </div>
 )
 

@@ -34,6 +34,9 @@ const App = () => (
     <div className="section">
       <Infographic />
     </div>
+    <div className="section">
+      <TitleAndText textIndex={3} />
+    </div>
   </div>
 )
 
