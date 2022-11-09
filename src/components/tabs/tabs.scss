@@ -1,7 +1,7 @@
 .tabs {
-  width: 100%;
-  max-width: 1250px;
-  margin: 0 auto;
+  margin: 0 2em;
+  display: flex;
+  flex-direction: column;
 
   &__title {
     margin-bottom: 32px;
@@ -10,15 +10,31 @@
     display: flex;
     list-style-type: none;
     overflow-x: scroll;
+    align-items: flex-end;
+    justify-content: initial;
+    @media screen and (min-width: 787px) {
+      justify-content: center
+    }
 
     li {
       padding: 16px 12px;
-      font-size: 18px;
+      font-size: 14px;
       border-bottom: 1px #757575 solid;
       cursor: pointer;
       min-width: 120px;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #808080;
+      min-height: 58px;
+      @media screen and (min-width: 787px) {
+        font-size: 18px;
+        min-height: 75px;
+      }
+      @media screen and (min-width: 1228px) {
+        min-height: 50px;
+      }
     }
 
     &--active {
@@ -31,6 +47,7 @@
     }
   }
   &__content {
+    margin: auto;
     &--info {
       width: 100%;
       display: flex;

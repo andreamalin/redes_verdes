@@ -1,11 +1,9 @@
 .list {
-    margin: 2em 0;
+    margin: 2em 1em;
     h2 {
-        font-size: 1.5em;
-        font-weight: 400;
-        margin: 0 10vw;
-        padding: 0;
-        color: #333;
+        span {
+            font-size: 0.7em;
+        }
     }
     .items-container {
         display: flex;
@@ -13,7 +11,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin: 0 10vw;
+        margin: 0 6vw;
         .item {
             width: 100%;
             display: flex;

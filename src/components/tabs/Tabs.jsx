@@ -14,7 +14,7 @@ const Tabs = () => {
   return (
     <div className="tabs">
       <div className="tabs__title">
-        <h1>Cómo funcionan los centros de datos verdes</h1>
+        <h2>Cómo funcionan los centros de datos verdes</h2>
       </div>
       <ul className="tabs__nav">
         <li onClick={() => setActiveTab(0)} className={activeTab === 0 && 'tabs__nav--active'}>Flujo de aire</li>

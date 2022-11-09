@@ -3,6 +3,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4em;
+
+    h3 {
+        font-size: 1em;
+        margin-bottom: 1em;
+        @media screen and (min-width: 768px) {
+            font-size: 2em;
+        }
+    }
+
+    p {
+        margin-top: 10px;
+        width: 80%;
+        a {
+            overflow-wrap: break-word;
+        }
+    }
 
     .infographic-preview {
         display: flex;
@@ -16,11 +33,13 @@
         background-image: url('https://www.sunbirddcim.com/sites/default/files/Sunbird_InfoGraphic_GreenDataCenters2021_0.jpg');
 
         p {
-            font-size: 3em;
+            font-size: 2.5em;
             font-weight: bold;
             text-transform: uppercase;
             color: white;
             display: none;
+            margin: 0 1em;
+            text-align: center;
         }
 
         &:hover {

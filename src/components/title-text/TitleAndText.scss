@@ -1,11 +1,18 @@
 .titleText {
-  max-width: 1400px;
-  margin: 32px auto;
-  h1 {
+  margin: 2em 2em 5em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
     margin-bottom: 16px;
   }
   p {
     text-align: justify;
+    width: 80vw;
+    @media screen and (min-width: 768px) {
+      width: 60vw;
+    }
   }
   ul.parentList {
     display: flex;

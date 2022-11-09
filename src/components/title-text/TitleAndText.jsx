@@ -8,7 +8,7 @@ const TitleAndText = ({ textIndex }) => (
       textIndex === 1
         ? (
           <>
-            <h1>El impacto de los Data Centers</h1>
+            <h2>El impacto de los Data Centers</h2>
             <p>
               Los data centers son uno de los principales contribuyentes
               a la huella de carbono tecnológica.
@@ -44,7 +44,7 @@ const TitleAndText = ({ textIndex }) => (
       textIndex === 2
         ? (
           <>
-            <h1>¿Por qué las redes verdes?</h1>
+            <h2>¿Por qué las redes verdes?</h2>
             <p>
               Surgen como principal reaccion al aumento de precio de la energia a nivel global.
               A parte, se ha concientizado el publico para comprender los daños que puede causar
@@ -67,7 +67,7 @@ const TitleAndText = ({ textIndex }) => (
       textIndex === 3
         ? (
           <>
-            <h1>¿Cuál es el futuro de las redes verdes?</h1>
+            <h2>¿Cuál es el futuro de las redes verdes?</h2>
             <ul className="conclusions">
               <li>
                 Queda claro que ya hay varias empresas que están empezando

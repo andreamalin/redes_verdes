@@ -4,7 +4,13 @@ import lang from '../../../assets/lang/lang-en'
 
 const AlternedList = () => (
   <div className="list">
-    <h1>{lang.technics.title}</h1>
+    <h2>
+      {lang.technics.title}
+      <span>
+        <br />
+        son las siguientes:
+      </span>
+    </h2>
     <div className="items-container">
       {
         lang.technics.items.map((item) => (

@@ -23,7 +23,7 @@ const lang = {
       {
         title: 'Apple',
         color: '#bababa',
-        data: 'unknown',
+        data: '779,000',
       },
       {
         title: 'Youtube',
@@ -75,7 +75,7 @@ const lang = {
     ],
   },
   technics: {
-    title: 'Algunas de las técnicas que se pueden utilizar para el ahorro de energía son las siguientes:',
+    title: 'Algunas de las técnicas que se pueden utilizar para el ahorro de energía',
     items: [
       {
         title: 'Consolidación de servidores',
