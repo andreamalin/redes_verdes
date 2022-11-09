@@ -6,6 +6,8 @@ import Quote from './components/quote/Quote'
 import Tabs from './components/tabs/Tabs'
 import TitleAndText from './components/title-text/TitleAndText'
 import AlternedList from './components/alterned-list/AlternedList'
+import Footer from './components/footer/Footer'
+import ListItems from './components/list-items/ListItems'
 
 import './theme.scss'
 import Infographic from './components/infographic/Infographic'
@@ -26,7 +28,7 @@ const App = () => (
       <AlternedList />
     </div>
     <div className="section">
-      <TitleAndText textIndex={1} />
+      <ListItems />
     </div>
     <div className="section">
       <Tabs />
@@ -37,6 +39,7 @@ const App = () => (
     <div className="section">
       <TitleAndText textIndex={3} />
     </div>
+    <Footer />
   </div>
 )
 

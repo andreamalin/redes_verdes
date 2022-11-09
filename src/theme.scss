@@ -36,6 +36,11 @@ body {
   justify-content: center;
 }
 
+.home {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .section {
   display: flex;
   flex-direction: column;

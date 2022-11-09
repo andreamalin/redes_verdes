@@ -104,6 +104,27 @@ const lang = {
       },
     ],
   },
+  impact: {
+    title: 'El impacto de los Data Centers',
+    description: 'Los data centers son uno de los principales contribuyentes a la huella de carbono tecnológica. Debido a su tamaño, necesitan gastos en funcionamiento, enfriamiento e incluso seguridad para las grandes empresas.\nLos principales aspectos que causan este crecimiento en la huella de carbono son:',
+    items: [
+      {
+        title: 'Alimentación de poder a las computadoras',
+        points: [
+          'Uso de combustibles fosiles',
+          '34 plantas de poder generan 500MW para sustentar el funcionamiento de los datacenters',
+          'Uso del 3% de la energia en Estados Unidos',
+        ],
+      },
+      {
+        title: 'Enfriamiento del equipo',
+        points: [
+          'En conjunto con la alimentación, presentan un gasto de $26 mil millones',
+          'Una reduccion del 40% ahorraria alrededor de $3.8 mil millones',
+        ],
+      },
+    ],
+  },
 }
 
 export default lang

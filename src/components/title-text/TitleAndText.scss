@@ -5,7 +5,7 @@
   align-items: center;
 
   h2 {
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
   }
   p {
     text-align: justify;
@@ -28,8 +28,16 @@
     }
   }
   .conclusions {
-    width: 50%;
+    width: 80%;
     margin: auto;
+    margin-bottom: 0;
     text-align: justify;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      // apply to parent
+      @at-root .titleText {
+        margin-bottom: 0;
+      }
+    }
   }
 }

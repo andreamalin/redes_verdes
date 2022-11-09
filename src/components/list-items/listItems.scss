@@ -1,0 +1,66 @@
+.container {
+    margin-bottom: 5em;
+    position: relative;
+    .description {
+        white-space: break-spaces;
+        width: 80%;
+        margin: 1em auto;
+        @media screen and (min-width: 768px) {
+            width: 60%;
+        }
+    }
+    .item {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 35px;
+        @media screen and (min-width: 768px) {
+            width: 60%;
+        }
+        &__title {
+            font-size: 1.2rem;
+            @media screen and (min-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+        &__point {
+            font-size: 1.2rem;
+            @media screen and (min-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .blob1 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0.9;
+        transform: translate(-74%, 280px) rotate(-129deg);
+        z-index: -1;
+        @media screen and (min-width: 768px) {
+            transform: translate(-67%, 280px) rotate(-129deg);
+        }
+        @media screen and (min-width: 1024px) {
+            transform: translate(-47%, 300px) rotate(-129deg);
+        }
+        @media screen and (min-width: 1440px) {
+            transform: translate(-47%, 360px) rotate(-129deg);
+        }
+    }
+    .blob2 {
+        position: absolute;
+        opacity: 0.9;
+        right: 0;
+        top: 0;
+        transform: translate(72%, -270px) rotate(205deg);
+        z-index: -1;
+        @media screen and (min-width: 768px) {
+            transform: translate(58%, -250px) rotate(206deg);
+        }
+        @media screen and (min-width: 1024px) {
+            transform: translate(40%, -200px) rotate(157deg);
+        }
+        @media screen and (min-width: 1440px) {
+            transform: translate(40%, -400px) rotate(157deg);
+        }
+    }
+}

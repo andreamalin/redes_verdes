@@ -1,0 +1,54 @@
+.footer {
+    .waves {
+        width: 100%;
+        position: relative;
+        bottom: -5px;
+        z-index: -1;
+    }
+    .info {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 5em;
+        bottom: -20px;
+        &__university {
+            margin-top: 25px;
+        }
+        &__references {
+            margin-top: 25px;
+            max-width: 80%;
+            p {
+                margin-bottom: 6px;
+            }
+            a {
+                font-size: 0.8em;
+                overflow-wrap: break-word;
+                text-decoration-line: none;
+                color: black;
+                display: block;
+                line-height: 1;
+                cursor: pointer;
+            }
+            br {
+                content: "";
+                margin: 2em;
+                display: block;
+                font-size: 24%;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+            bottom: -80px;
+            &__university {
+                margin-top: 0;
+            }
+            &__references {
+                margin-top: 0;
+                max-width: 40%;
+            }
+        }
+    }
+}
